@@ -6,9 +6,9 @@
 
 ## 1. 下载 Windows 插件包
 
-### [点击下载 Iris Color v0.5.0 — Windows ZIP](https://github.com/wangbingfu3-ctrl/iris-color/releases/download/v0.5.0/Iris-Color-v0.5.0-Windows.zip)
+### [点击下载 Iris Color v0.5.0 — Windows ZIP](https://github.com/justConf1ict/iris-color/releases/download/v0.5.0/Iris-Color-v0.5.0-Windows.zip)
 
-[打开发布页面](https://github.com/wangbingfu3-ctrl/iris-color/releases/tag/v0.5.0) · 文件大小 **32,557,598 字节（约 31.05 MiB）**
+[打开发布页面](https://github.com/justConf1ict/iris-color/releases/tag/v0.5.0) · 文件大小 **32,557,598 字节（约 31.05 MiB）**
 
 请下载 **Iris-Color-v0.5.0-Windows.zip**。GitHub 自动生成的 **Source code (zip / tar.gz)** 是仓库源码归档，不是可安装的插件包，不含本次发布的插件二进制。
 
