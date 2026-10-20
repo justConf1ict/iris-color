@@ -1,0 +1,5 @@
+LIBRARY SHELL32.dll
+EXPORTS
+IsUserAnAdmin
+ShellExecuteW
+SHGetFolderPathW

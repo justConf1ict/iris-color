@@ -1,0 +1,7 @@
+build/
+dist/
+third_party/vst3sdk/
+tools/.toolchains/
+__pycache__/
+*.pyc
+.DS_Store

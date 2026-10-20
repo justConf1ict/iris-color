@@ -1,0 +1,5 @@
+LIBRARY "Iris Color"
+EXPORTS
+    GetPluginFactory
+    InitDll
+    ExitDll

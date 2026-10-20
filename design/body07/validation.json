@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "checked": "2026-10-20",
+  "surface": "local HTML preview",
+  "audio": false,
+  "checks": [
+    "load without JavaScript errors",
+    "material choice",
+    "keyboard Amount",
+    "numeric Decay units",
+    "Escape cancels",
+    "Amount reset exact zero",
+    "named preset Body fields",
+    "1040 logical width and scaled view screenshots",
+    "700px viewport has no horizontal overflow"
+  ],
+  "nativeCapturesInspected": [
+    "Body 100%",
+    "Body 150%",
+    "Main 100%"
+  ]
+}
