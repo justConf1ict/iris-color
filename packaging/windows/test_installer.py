@@ -67,14 +67,14 @@ class InstallerPackagingTests(unittest.TestCase):
         font.write_bytes(b"font fixture")
         result = self.prepare()
         self.assertEqual(result.returncode, 0, result.stderr)
-        manifest = json.loads((self.work / "payload-manifest.json").read_text())
+        manifest = json.loads((self.work / "payload-manifest.json").read_text(encoding="utf-8"))
         actual = {item["path"]: item for item in manifest["files"]}
         expected = {p.relative_to(self.bundle).as_posix(): p for p in self.bundle.rglob("*") if p.is_file()}
         self.assertEqual(actual.keys(), expected.keys())
         for relative, path in expected.items():
             self.assertEqual(actual[relative]["sha256"], hashlib.sha256(path.read_bytes()).hexdigest())
         self.assertEqual(manifest["binary_version"], "0.6.0.0")
-        include = (self.work / "payload.nsh").read_text()
+        include = (self.work / "payload.nsh").read_text(encoding="utf-8")
         self.assertIn("字体$$font.otf", include)
         self.assertNotIn("RMDir /r", include)
         self.assertIn('Delete "$BundleDir\\Contents\\Resources\\Fonts\\字体$$font.otf"', include)
@@ -90,7 +90,7 @@ class InstallerPackagingTests(unittest.TestCase):
         (self.bundle / "desktop.ini").write_text("fixture root resource\n")
         result = self.prepare()
         self.assertEqual(result.returncode, 0, result.stderr)
-        manifest = json.loads((self.work / "payload-manifest.json").read_text())
+        manifest = json.loads((self.work / "payload-manifest.json").read_text(encoding="utf-8"))
         self.assertIn("desktop.ini", {item["path"] for item in manifest["files"]})
 
     def test_old_binary_cannot_be_relabelled_as_new_release(self):
@@ -107,6 +107,8 @@ class InstallerPackagingTests(unittest.TestCase):
 
     def test_case_colliding_resource_names_are_rejected(self):
         (self.resources / "license.TXT").write_text("collides on Windows")
+        if len([p for p in self.resources.iterdir() if p.name.lower()=="license.txt"])<2:
+            self.skipTest("Filesystem cannot create two case-colliding fixture files")
         result = self.prepare()
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("case-insensitive", result.stderr)
@@ -114,7 +116,12 @@ class InstallerPackagingTests(unittest.TestCase):
     def test_symlink_cannot_escape_payload(self):
         outside = self.root / "outside-secret.txt"
         outside.write_text("must not be packaged")
-        (self.resources / "linked.txt").symlink_to(outside)
+        try:
+            (self.resources / "linked.txt").symlink_to(outside)
+        except OSError as error:
+            if getattr(error,"winerror",None)==1314:
+                self.skipTest("Windows symlink privilege unavailable; system settings unchanged")
+            raise
         result = self.prepare()
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("Symlink", result.stderr)

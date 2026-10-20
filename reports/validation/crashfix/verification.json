@@ -1,0 +1,140 @@
+{
+  "date": "2026-10-20",
+  "original_dll_sha256": "8543459b4efa782b30c24c3b5db33e3dcdf9640c94dcf0a0bc4ba8493c4edae7",
+  "fixed_dll_sha256": "4a9814488d045c5a3749c95058cefa0261c4c83c86c1bed50327059336ebdce0",
+  "compiler": "MSVC 19.41.34120",
+  "windows_sdk": "10.0.22621.0",
+  "vst3sdk_commit": "3cdf9ca5d1f5b1b21e0a86832aa4abe55607bd96",
+  "source_baseline_commit": "fdb229e27d7c0b0d49cbd0f4cee30813f94d7469",
+  "real_fl_studio_acceptance": false,
+  "strict_text_pixel_equivalence": false,
+  "ctest": {
+    "passed": 17,
+    "failed": 0
+  },
+  "audio_matrix_cases": 180,
+  "transport_groups": 16,
+  "packaging_tests": {
+    "passed": 7,
+    "skipped": 2,
+    "failed": 0
+  },
+  "private_fonts_gui_idle_wall_seconds_minimum": 600,
+  "private_fonts_combined_wall_seconds": 600.006,
+  "combined_gui_cycles": 30,
+  "asan_audio_seconds": 60,
+  "asan_audio_wall_seconds": 268.072,
+  "source_sha256": {
+    "src/IrisBody.h": "31391eafd5c45118fc8b256a877489c9822354fcf6d89fba368274cff124ac4a",
+    "src/IrisColorBands.h": "144a91e9a79b8e683b239ada7972db49911312f0acb64c8a2afc6fb1c96b015d",
+    "src/IrisCreative.h": "771b44acf2410ffca4f8a4fa68021dcd331e0c4120dc2fb4e0238a605945b0d5",
+    "src/IrisDSP.cpp": "28276f4308bcb2a57c51941698caa6c442517a1ee748434a6cec1ee71f210850",
+    "src/IrisDSP.h": "cc7f85661667747642810770be3f0480986e477e38080120f855cde84f359967",
+    "src/IrisPresets.h": "0fcd451db30f373920f7fee55df1f6f2a9da0548c26ce3dffa6c14a2cfb17ca7",
+    "src/IrisPrism.h": "eb99a4f98092106798348bd05a1ed72ab5dd6864c87e2efc3c5a0d925bcdd730",
+    "plugin/BUILDING.md": "384ed610f6b0f647c0cb6b6e94e07ef7c72f4a8581fc46ad40119491c5dff130",
+    "plugin/IrisBodyVisual.h": "1dc5b443637ac1224301259e575be1df5afd21beea13a849c3b6f1a5868427c0",
+    "plugin/IrisColor.def": "d91ccc2b85dd002ca115ac12e6d04e1c0c67d77b392fbab02664fb7545b19960",
+    "plugin/IrisEditorInput.h": "0acf70ac4823cee6f59dba799775b86eca17c47d04719ba18e0f41dc8d6cf998",
+    "plugin/IrisEditorWin.cpp": "7ece60f6bb743c72b9a6b55d465aebe5581e55c5c41ad294ab6370c93fb0c7e9",
+    "plugin/IrisEntry.cpp": "283f5b9a0d7d7081516d01a8a6d75d8c85582bf5b04f1cfec423581baaeacfad",
+    "plugin/IrisParameters.cpp": "afc54d79ec291c817c27ed802d34b4ee91019f816fb82424809d3cc1ffb2b847",
+    "plugin/IrisParameters.h": "2b26c64c1304009fd8bef10aede779f338329fb2093a9eb29d88ab9b46c93e81",
+    "plugin/IrisPlugin.cpp": "33015c0faf602c999bf0fb3c238c128f9b31b95e824645a09f13da7e3468ce15",
+    "plugin/IrisPlugin.h": "d649401fa986da789130aa3fc02284e083d13c1dd7c8f6abf13d750469e240f6",
+    "plugin/IrisTypography.h": "2c8403d1d16abd44c926e69f881df60971cc302d273e4cddf07dcba39cc4abfb",
+    "plugin/IrisVersion.rc": "df6e4fd43d106eb7f12b16a04b6090c013068d1e6f418865edaa0bd35288722d",
+    "plugin/IrisVisual.h": "89ca2ec13202f1ce8ea6ee030de38f496281971785a9f72255fd03cdcf3fd8eb",
+    "plugin/sdk_sources.txt": "8a4b85550d2ed6dc5818bf3dd293e3cedb5067f0bda275ba8f314f60cae60cb0",
+    "plugin/tests/fixtures/state04_literal.h": "04500fab2b6d88f934a044e65aeed062d0d98b4dd302bd2580e0d08a6b99d427",
+    "plugin/tests/fixtures/state05_literal.h": "d916f03ebf6a2bc0407591572f34ad559ea0ac5f0c469091e36125e3ee12168a",
+    "plugin/tests/fixtures/state06_literal.h": "e96a01c54d99930335a4e0f8595f8fec764a9a4738a3c71ca3f6f8363cd0c7ff",
+    "plugin/tests/gui_controls_test.cpp": "6585d726b60aadd20774345394c2a912a7aea883f717474522aae59ba947fa1c",
+    "plugin/tests/gui_lifecycle_test.cpp": "189722229516936c73db71a52d9b5c7b078ba75b556ad2070bfda73474e20f86",
+    "plugin/tests/host_contract_test.cpp": "6b36fc286fd8633bab216cc4860bbb90f498d9edb9e73c069e6c76bf2358c1e7",
+    "plugin/tests/host_test.cpp": "2e6ba0ee0328efb39635097a3ed05c3da500718234448919877076595123289e",
+    "plugin/tests/preset_test.cpp": "1a8a1360934d5336ae20d04b26aec1c006432e12a9baeb6ad69b373933ea52a0",
+    "plugin/tests/stability_test.cpp": "72182647a09e18e094592d11c0d8b4b1256f506bdc56edfb73d5fdd95857e5bd",
+    "plugin/tests/state_compat04_test.cpp": "85b3198cacfbc7e279dd113951f701b6fb12bbc0302b58964637fc53a8e5101d",
+    "plugin/tests/state_compat05_test.cpp": "9bb720fbc8d328a4b5e6f63a885140903e14b9dd4a67ea64c32b9d01ee80a4f2",
+    "plugin/tests/state_compat06_test.cpp": "1289f4f18dfc07d03f7b78b83fb04d00d70d264961e7bc3e1c49d9b1e460dd3b",
+    "plugin/tests/state_compat07_test.cpp": "44d705b0d099f80d7539cd3f86563c6650c25b923a96542856e71f27b18f3c0f",
+    "plugin/tests/state_compat_test.cpp": "dfb86cbca083a635432862cdbe4549f34cd3f34ae4668ebf57538092c1ff74f7",
+    "plugin/tests/transport04_test.cpp": "70ce55682444e2ec07ddf0a8dca465c5ed2d3bd707665688928d9c3663d75d31"
+  },
+  "logs": {
+    "gui-original-red.log": {
+      "original_sha256": "770ea363be1a51b60a6cbac7d5a6c6894ae2fd8d2de8989b315b56734437d8a8",
+      "public_sha256": "770ea363be1a51b60a6cbac7d5a6c6894ae2fd8d2de8989b315b56734437d8a8"
+    },
+    "gui-fixed-green.log": {
+      "original_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec",
+      "public_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec"
+    },
+    "prepublish-ctest.log": {
+      "original_sha256": "299e1fa6b02f3907893710ff13f1d2f36bdfc593a7b1f6d4ac91ac64565f307b",
+      "public_sha256": "102b9edb587a7899ec204b5a6b366041e2d9c220ebd311ae3bbff009b9b1064e"
+    },
+    "audio-matrix.log": {
+      "original_sha256": "c2a12225b9407df30028f1c7fa737868b541de56c24ce7c968734beb8cfb636a",
+      "public_sha256": "c2a12225b9407df30028f1c7fa737868b541de56c24ce7c968734beb8cfb636a"
+    },
+    "gui-private-fonts-600s.log": {
+      "original_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec",
+      "public_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec"
+    },
+    "combined-private-fonts-600s.log": {
+      "original_sha256": "a70137f3b877b7507d1010cc808d70122e480d0cc6b406175d15e994faa22dca",
+      "public_sha256": "a70137f3b877b7507d1010cc808d70122e480d0cc6b406175d15e994faa22dca"
+    },
+    "audio-gui-closed-60s.log": {
+      "original_sha256": "3de2cd30e2d7cdd7a2be8b0b4a9358e4044507bfec860d704c46ea4410b266b5",
+      "public_sha256": "3de2cd30e2d7cdd7a2be8b0b4a9358e4044507bfec860d704c46ea4410b266b5"
+    },
+    "host-contract.log": {
+      "original_sha256": "3f680e3d6f62be71c706228ec4d0a3195be7c43ad5a40744693b2e5fde0d3c49",
+      "public_sha256": "3f680e3d6f62be71c706228ec4d0a3195be7c43ad5a40744693b2e5fde0d3c49"
+    },
+    "transport.log": {
+      "original_sha256": "c3431bdd98533eacb72be31aee8ffb503ce98a341ff5156d7ee2ac3b65859a9c",
+      "public_sha256": "c3431bdd98533eacb72be31aee8ffb503ce98a341ff5156d7ee2ac3b65859a9c"
+    },
+    "gui-controls.log": {
+      "original_sha256": "b5b364db9dfac6413a827d73eec87841a7bb1c3f22706dfaa0497029821952d5",
+      "public_sha256": "b5b364db9dfac6413a827d73eec87841a7bb1c3f22706dfaa0497029821952d5"
+    },
+    "asan-gui.log": {
+      "original_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec",
+      "public_sha256": "46afd68314e8e4f660e011fb9f598c841524c6f8e7b1a091fc5fd21941220aec"
+    },
+    "asan-body.log": {
+      "original_sha256": "de8acc0486f3723016e9189780d14ff00f735c8ccd62ef3072dc114e2c0c626c",
+      "public_sha256": "de8acc0486f3723016e9189780d14ff00f735c8ccd62ef3072dc114e2c0c626c"
+    },
+    "asan-state07.log": {
+      "original_sha256": "2ce7dd0aba96cbdf96e248d0227d6a7efb522b4c44487df7375d7722ff10ce9c",
+      "public_sha256": "2ce7dd0aba96cbdf96e248d0227d6a7efb522b4c44487df7375d7722ff10ce9c"
+    },
+    "asan-combined-60s.log": {
+      "original_sha256": "2364d5c3f575c48e7dc1b1ccea1f8a12ddbfd13b0056dccdae6b2f547fcb2225",
+      "public_sha256": "2364d5c3f575c48e7dc1b1ccea1f8a12ddbfd13b0056dccdae6b2f547fcb2225"
+    },
+    "asan-gui-controls.log": {
+      "original_sha256": "b5b364db9dfac6413a827d73eec87841a7bb1c3f22706dfaa0497029821952d5",
+      "public_sha256": "b5b364db9dfac6413a827d73eec87841a7bb1c3f22706dfaa0497029821952d5"
+    },
+    "packaging-tests-final.log": {
+      "original_sha256": "2ddeade4e188795739bc1f2e06a151eb8bb98df96a491c1b27e883b4215e625d",
+      "public_sha256": "2ddeade4e188795739bc1f2e06a151eb8bb98df96a491c1b27e883b4215e625d"
+    },
+    "text-format-equivalence.log": {
+      "original_sha256": "6dbc75cf402264058199213903cb2e191db30474c15289bcf63120f71cfe44b3",
+      "public_sha256": "6dbc75cf402264058199213903cb2e191db30474c15289bcf63120f71cfe44b3"
+    },
+    "text-control.log": {
+      "original_sha256": "6624291f9a808233da9dd29ec91fb76e06374fa79d531059f05f81f049eb8230",
+      "public_sha256": "6624291f9a808233da9dd29ec91fb76e06374fa79d531059f05f81f049eb8230"
+    }
+  },
+  "privacy": "Only generated test output is included; user paths redacted. No crash dumps or private DAW logs."
+}

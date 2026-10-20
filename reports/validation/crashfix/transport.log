@@ -1,0 +1,23 @@
+Core: Legacy
+PASS  real VST3 component advertises PPQ, tempo, and transport-state requirements
+      native sync maxerr: 64=0, 4097=0, same-value automation=0
+PASS  valid 137 BPM / negative-start PPQ is equivalent across 1017 and 64-sample callbacks
+PASS  oversized 4097-sample callback stress correctly offsets every internal 1024-sample chunk
+PASS  eight neutral Depth automation points split processing without changing its rhythmic audio
+PASS  stopped valid host transport holds one selected pitch class and keeps synchronization status
+PASS  valid seek reanchors the native step immediately, including while stopped
+PASS  nonfinite host position safely switches real telemetry to internal timing fallback
+      native 15 vs 500 BPM relative audio difference=0.105737
+PASS  15 and 500 BPM drive the predicted actual pitch-class sequence and distinct processed audio
+Core: Prism
+PASS  real VST3 component advertises PPQ, tempo, and transport-state requirements
+      native sync maxerr: 64=0, 4097=0, same-value automation=0
+PASS  valid 137 BPM / negative-start PPQ is equivalent across 1017 and 64-sample callbacks
+PASS  oversized 4097-sample callback stress correctly offsets every internal 1024-sample chunk
+PASS  eight neutral Depth automation points split processing without changing its rhythmic audio
+PASS  stopped valid host transport holds one selected pitch class and keeps synchronization status
+PASS  valid seek reanchors the native step immediately, including while stopped
+PASS  nonfinite host position safely switches real telemetry to internal timing fallback
+      native 15 vs 500 BPM relative audio difference=0.604286
+PASS  15 and 500 BPM drive the predicted actual pitch-class sequence and distinct processed audio
+Independent native transport review: 8 groups per core / 16 groups passed, 0 failures.

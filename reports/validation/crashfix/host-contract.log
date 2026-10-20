@@ -1,0 +1,7 @@
+PASS  factory, class IDs, 81 sound + 2 hidden parameters, Core/Clarity/Body defaults, buses, bypass, panic IDs 29/30, tempo/PPQ requirements
+PASS  all controls save/restore and synchronize; truncated state rejects without partial mutation
+PASS  sample-rate contract accepts 192 kHz and rejects unsupported 384 kHz
+      max block-equivalence error = 0, tail absolute sum = 285.581
+PASS  sample-offset MIDI and old/new automation, PPQ across 64/1017/4096 blocks, audible processing, silent tail, zero-frame flush
+PASS  real audio/creative telemetry, source peak and silence, legacy visualization, malformed/out-of-range new fields rejected
+PASS  VST3 metadata, state, processing, automation, telemetry and lifetime contracts

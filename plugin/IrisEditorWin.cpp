@@ -306,12 +306,14 @@ private:
             bool drawn=false;
             graphics(dc,[&](Gdiplus::Graphics& g) {
                 g.SetTextRenderingHint(Gdiplus::TextRenderingHintAntiAliasGridFit);
-                Gdiplus::StringFormat format(Gdiplus::StringFormat::GenericTypographic());
-                // These are single-line UI labels. LineLimit can suppress an
-                // otherwise fitting unit label when the font's line box is
-                // taller than the control's compact text rectangle.
-                format.SetFormatFlags((format.GetFormatFlags()|Gdiplus::StringFormatFlagsNoWrap)&
-                    ~Gdiplus::StringFormatFlagsLineLimit);
+                // MinGW caches GenericTypographic's wrapper on the GDI+ heap.
+                // Closing the last editor shuts that heap down, leaving its
+                // module-global pointer stale when an editor is reopened.
+                // Own the format within this paint/GDI+ session instead.
+                // Preserve the typographic flags, with NoWrap and no LineLimit
+                // so short control rectangles still display single-line labels.
+                Gdiplus::StringFormat format(Gdiplus::StringFormatFlagsNoFitBlackBox |
+                    Gdiplus::StringFormatFlagsNoClip | Gdiplus::StringFormatFlagsNoWrap);
                 format.SetTrimming(Gdiplus::StringTrimmingEllipsisCharacter);
                 format.SetLineAlignment(Gdiplus::StringAlignmentCenter);
                 format.SetAlignment((align&DT_CENTER) ? Gdiplus::StringAlignmentCenter :

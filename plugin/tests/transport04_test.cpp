@@ -160,11 +160,11 @@ void checkTimingDeclaration(Session& s) {
 }
 void checkNativeSpans(Session& session,int engineMode) {
     TimingSettings timing;timing.engineMode=engineMode;
-    const auto large=renderMotion(session,1017,timing),small=renderMotion(session,64,timing),
+    const auto large=renderMotion(session,1017,timing),shortBlocks=renderMotion(session,64,timing),
                scratchChunks=renderMotion(session,4097,timing);
     auto segmentedTiming=timing;segmentedTiming.neutralAutomation=true;
     const auto segmented=renderMotion(session,1017,segmentedTiming);
-    const double smallError=motionError(large,small),scratchError=motionError(large,scratchChunks),
+    const double smallError=motionError(large,shortBlocks),scratchError=motionError(large,scratchChunks),
                  parameterError=motionError(large,segmented);
     std::cout<<"      native sync maxerr: 64="<<smallError<<", 4097="<<scratchError
              <<", same-value automation="<<parameterError<<'\n';

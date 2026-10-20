@@ -1,0 +1,4 @@
+OPEN 0
+CLOSE 0
+OPEN 1
+ACCESS_VIOLATION address=00007FFF608DA8F6 module_offset=0x3a8f6 read_write=0 target=0x2079b3d6200

@@ -1,0 +1,5 @@
+PASS Frozen released 0.6 state retains every original value and leaves Body off
+PASS Sparse states and unknown IDs do not infer a Body opt-in
+PASS All four materials and endpoint levels roundtrip; truncated states are atomic
+PASS Nonfinite new records are rejected without altering the previous session
+PASS 4 Body migration/state groups

@@ -1,0 +1,39 @@
+Test project <PROJECT_ROOT>/Iris-Color-v0.7.0-crash-fix/build/msvc
+      Start  9: dsp_color03_state
+      Start 14: dsp_color07_body
+ 1/17 Test #14: dsp_color07_body .................   Passed    5.77 sec
+      Start  6: dsp_unit
+ 2/17 Test  #9: dsp_color03_state ................   Passed    6.97 sec
+      Start 16: dsp04_review_extremes
+ 3/17 Test  #6: dsp_unit .........................   Passed    3.85 sec
+      Start  7: dsp_color03_bands
+ 4/17 Test #16: dsp04_review_extremes ............   Passed    3.30 sec
+      Start 10: dsp_color04_contracts
+ 5/17 Test  #7: dsp_color03_bands ................   Passed    2.23 sec
+      Start 11: dsp_color04_features
+ 6/17 Test #10: dsp_color04_contracts ............   Passed    2.03 sec
+      Start 17: visual_mailbox
+ 7/17 Test #17: visual_mailbox ...................   Passed    1.20 sec
+      Start 15: dsp_revision_visual
+ 8/17 Test #11: dsp_color04_features .............   Passed    1.86 sec
+      Start  8: dsp_color03_level
+ 9/17 Test #15: dsp_revision_visual ..............   Passed    0.97 sec
+      Start 13: dsp_color05_mode
+10/17 Test  #8: dsp_color03_level ................   Passed    0.79 sec
+      Start  2: state_compat04_test
+11/17 Test  #2: state_compat04_test ..............   Passed    0.02 sec
+      Start  1: state_compat_test
+12/17 Test  #1: state_compat_test ................   Passed    0.02 sec
+      Start  4: state_compat06_test
+13/17 Test  #4: state_compat06_test ..............   Passed    0.02 sec
+      Start  3: state_compat05_test
+14/17 Test  #3: state_compat05_test ..............   Passed    0.02 sec
+      Start  5: state_compat07_test
+15/17 Test  #5: state_compat07_test ..............   Passed    0.02 sec
+      Start 12: dsp_color05_dive_guard
+16/17 Test #12: dsp_color05_dive_guard ...........   Passed    0.07 sec
+17/17 Test #13: dsp_color05_mode .................   Passed    0.28 sec
+
+100% tests passed, 0 tests failed out of 17
+
+Total Test time (real) =  14.76 sec

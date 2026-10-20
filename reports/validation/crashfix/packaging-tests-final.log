@@ -1,0 +1,14 @@
+test_bundle_root_document_is_packaged (__main__.InstallerPackagingTests.test_bundle_root_document_is_packaged) ... ok
+test_case_colliding_resource_names_are_rejected (__main__.InstallerPackagingTests.test_case_colliding_resource_names_are_rejected) ... skipped 'Filesystem cannot create two case-colliding fixture files'
+test_missing_plugin_binary_is_rejected (__main__.InstallerPackagingTests.test_missing_plugin_binary_is_rejected) ... ok
+test_non_x64_binary_is_rejected (__main__.InstallerPackagingTests.test_non_x64_binary_is_rejected) ... ok
+test_old_binary_cannot_be_relabelled_as_new_release (__main__.InstallerPackagingTests.test_old_binary_cannot_be_relabelled_as_new_release) ... ok
+test_prepared_manifest_covers_binary_and_nested_unicode_resource (__main__.InstallerPackagingTests.test_prepared_manifest_covers_binary_and_nested_unicode_resource) ... ok
+test_symlink_cannot_escape_payload (__main__.InstallerPackagingTests.test_symlink_cannot_escape_payload) ... skipped 'Windows symlink privilege unavailable; system settings unchanged'
+test_truncated_or_changed_installer_fails_integrity_validation (__main__.InstallerPackagingTests.test_truncated_or_changed_installer_fails_integrity_validation) ... ok
+test_windows_reserved_resource_name_is_rejected (__main__.InstallerPackagingTests.test_windows_reserved_resource_name_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.541s
+
+OK (skipped=2)
